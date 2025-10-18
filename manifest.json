@@ -1,0 +1,12 @@
+{
+  "package": "removeMarkdownFormating",
+  "name": "Remove Markdown Formating",
+  "human_version": "0.2",
+  "modules": [
+    {
+      "name": "remove_markdown_formating",
+      "path": "__init__.py"
+    }
+  ],
+  "min_point_version": 45
+}
