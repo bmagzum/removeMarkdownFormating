@@ -16,7 +16,7 @@ def format_key(k):
     return QKeySequence(k).toString(QKeySequence.SequenceFormat.NativeText)
 
 
-def removeMarkdownFormating(editor: Editor):
+def removeMarkdownFormatting(editor: Editor):
     js = """
     var sel = window.getSelection().toString();
     var cleaned = sel.replace(/\\$\\$|\\$|\\*\\*|\\*|&nbsp;/g, "");
@@ -29,8 +29,8 @@ def setupEditorButtons(buttons, editor: Editor):
     key = get_key()
     b = editor.addButton(
         os.path.join(os.path.dirname(__file__), "dollar-alt.png"),
-        "removeMarkdownFormating",
-        removeMarkdownFormating,
+        "removeMarkdownFormatting",
+        removeMarkdownFormatting,
         tip=f"Remove Markdown Formatting ({format_key(key)})",
         keys=key,
     )

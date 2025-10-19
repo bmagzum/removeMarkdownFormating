@@ -1,10 +1,10 @@
 {
-  "package": "removeMarkdownFormating",
-  "name": "Remove Markdown Formating",
+  "package": "removeMarkdownFormatting",
+  "name": "Remove Markdown Formatting",
   "human_version": "0.2",
   "modules": [
     {
-      "name": "remove_markdown_formating",
+      "name": "remove_markdown_formatting",
       "path": "__init__.py"
     }
   ],
